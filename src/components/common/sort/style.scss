@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
+
+// Variables
+$border-color: #CFCFE4;
+$border-radius: 18px;
+$padding: 12px;
+$selected-bg-color: #5FBF77;
+$default-bg-color: white;
+$selected-font-color: #FFFFFF;
+$default-font-color: #39414B;
+// $font-family: 'Nunito';
+$font-weight: 800;
+$font-size: 18px;
+
+// Container
+.sort-container {
+  border: solid 1px $border-color;
+  border-radius: $border-radius;
+  height: 100%;
+  min-width: 264px;
+  padding: $padding;
+}
+
+// List Item
+.sort-list-item {
+  padding: $padding;
+  border-radius: $border-radius;
+  cursor: pointer;
+
+  &.selected {
+    background-color: $selected-bg-color;
+
+    .sort-typography {
+      color: $selected-font-color !important;
+    }
+  }
+
+  &.default {
+    background-color: $default-bg-color;
+
+    .sort-typography {
+      color: $default-font-color !important;
+    }
+  }
+}
+
+// Typography
+.sort-typography {
+  font-weight: 800 !important;
+  font-weight: $font-weight !important;
+  font-size: $font-size !important;
+}
