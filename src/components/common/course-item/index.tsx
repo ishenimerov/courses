@@ -4,7 +4,7 @@ import type { Course } from '../../../types/courses';
 
 export function CourseItem(props: { tag: Course }) {
   return (
-    <Card sx={{ width: '100%', borderRadius: '18px' }}>
+    <Card sx={{ width: '100%', height: '230px', borderRadius: '18px' }}>
       <Box
         alt={props.tag.name}
         component="img"
